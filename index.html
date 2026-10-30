@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arohi Shah</title>
+
+  <!--
+    Layout and interactions adapted from the ROSEMARY theme by seyche.tumblr.com
+    Credits from the original: tippy.js tooltips by atomiks, responsive embeds by nouvae
+  -->
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+</head>
+
+<body class="load-in">
+
+<!-- ===================== THEME TOGGLE ===================== -->
+<button id="theme-toggle" type="button" title="switch theme" aria-label="Switch theme">
+  <i data-feather="sun"></i>
+</button>
+
+<!-- ===================== BUTTON STRIP ===================== -->
+<div id="button-wrap">
+  <a class="menu-button" title="navigate">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+    </svg>
+    <div class="vertical-dots">
+      <span></span><span></span><span></span>
+    </div>
+  </a>
+
+  <div id="btop">
+    <a href="#" title="back to top" target="_self">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </a>
+  </div>
+
+  <div class="mobile-controls">
+    <a href="https://github.com/Arohi-Shah" target="_blank" title="github"><i data-feather="github"></i></a>
+    <a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank" title="linkedin"><i data-feather="linkedin"></i></a>
+    <a href="mailto:arohi.shah654@gmail.com" title="email"><i data-feather="mail"></i></a>
+  </div>
+</div>
+
+<!-- ===================== MENU DOTS ===================== -->
+<div class="dots menu-dots">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- ===================== OVERLAY ===================== -->
+<div class="menu-fade"></div>
+
+<!-- ===================== SLIDE-IN NAV ===================== -->
+<div id="menu">
+  <div id="menu-heading">
+    <div class="title">navigation</div>
+  </div>
+  <div id="menu-content">
+    <nav>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#certifications">certifications</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="https://github.com/Arohi-Shah" target="_blank">github &#8599;</a></li>
+      <li><a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank">linkedin &#8599;</a></li>
+    </nav>
+    <div class="menu-social">
+      <a href="https://github.com/Arohi-Shah" target="_blank" title="GitHub"><i data-feather="github"></i></a>
+      <a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank" title="LinkedIn"><i data-feather="linkedin"></i></a>
+      <a href="mailto:arohi.shah654@gmail.com" title="Email"><i data-feather="mail"></i></a>
+      <a href="tel:+917982136045" title="Phone"><i data-feather="phone"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== CONTAINER ===================== -->
+<section id="container">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside>
+    <div id="blog-info">
+
+      <div class="avatar">AS</div>
+
+      <div class="title"><a href="#">Arohi Shah</a></div>
+
+      <ul id="desc-stats" class="upper">
+        <li><i data-feather="code"></i>B.Tech &mdash; CSE</li>
+        <li><i data-feather="book-open"></i>Gaming Technology</li>
+        <li><i data-feather="map-pin"></i>Noida, UP</li>
+      </ul>
+
+      <div class="dots">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div id="description">
+        CS &amp; Engineering (Gaming Technology) student at VIT Bhopal, building with AI, IoT &amp; cloud technologies.
+      </div>
+
+      <div class="side-links">
+        <a href="https://github.com/Arohi-Shah" target="_blank" title="GitHub"><i data-feather="github"></i></a>
+        <a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank" title="LinkedIn"><i data-feather="linkedin"></i></a>
+        <a href="mailto:arohi.shah654@gmail.com" title="Email"><i data-feather="mail"></i></a>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ===== POSTS CONTAINER ===== -->
+  <div id="posts-container">
+
+    <!-- ==================== ABOUT ==================== -->
+    <article id="about">
+
+      <div class="pin-post">
+        <a href="#experience">
+          <i data-feather="map-pin"></i>
+          <span class="subtitle">pinned: software intern at apollo meister k llp</span>
+        </a>
+      </div>
+
+      <h1><a href="#about">About Me</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="quote-wrap">
+        <div class="quote">I love turning ideas into impactful products.</div>
+        <div class="dots"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="source upper">arohi shah</div>
+      </div>
+
+      <div class="post-body">
+        <p>I am a <strong>B.Tech student in Computer Science &amp; Engineering (Gaming Technology)</strong> at Vellore Institute of Technology, Bhopal &mdash; passionate about building real-world solutions at the intersection of AI, IoT, and cloud technologies.</p>
+        <p>With hands-on experience in AI/ML development, industrial automation, and full-stack web applications, I love turning ideas into impactful products. From smart farms that reduce water waste by 45% to AI players that master board games.</p>
+        <p>Currently a <strong>Software Intern at Apollo Meister K LLP</strong>, working on SCADA systems, PLCs, Servo Controls, and microcontroller integrations including Raspberry Pi, ESP32, and ESP8266.</p>
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="mailto:arohi.shah654@gmail.com" title="arohi.shah654@gmail.com">
+              <i data-feather="mail"></i>
+            </a>
+          </div>
+          <div class="permalinks">
+            <li><span class="subtitle" style="font-size:0.88em;">+91-7982136045</span></li>
+          </div>
+          <div class="info-icon">
+            <a href="https://github.com/Arohi-Shah" target="_blank" title="github.com/Arohi-Shah">
+              <i data-feather="github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== SKILLS ==================== -->
+    <article id="skills">
+      <h1><a href="#skills">Technical Skills</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="section-tags">
+
+        <div class="tag-group">
+          <span class="tag-group-label">Languages</span>
+          <div class="tags-row">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Python</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>TypeScript</span>
+          </div>
+        </div>
+
+        <div class="tag-group">
+          <span class="tag-group-label">Cloud &amp; AI</span>
+          <div class="tags-row">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>AWS (EC2, S3, IAM)</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Generative AI</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>IBM Cloud</span>
+          </div>
+        </div>
+
+        <div class="tag-group">
+          <span class="tag-group-label">Frameworks &amp; Tools</span>
+          <div class="tags-row">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>React</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Flask</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Scikit-Learn</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Supabase</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>NodeMCU</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>PySerial</span>
+          </div>
+        </div>
+
+        <div class="tag-group">
+          <span class="tag-group-label">Concepts</span>
+          <div class="tags-row">
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>OOP</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>DSA</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Machine Learning</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>IoT</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Expectimax</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Design Patterns</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>MATLAB</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>Git</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="#about" title="back to top"><i data-feather="arrow-up"></i></a>
+          </div>
+          <div class="permalinks">
+            <li class="upper" style="color:var(--muted);">python &bull; typescript &bull; aws &bull; react</li>
+          </div>
+          <div class="info-icon">
+            <a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank" title="LinkedIn"><i data-feather="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <article id="projects">
+      <h1><a href="#projects">Projects</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Smart Farm Guardian -->
+      <div class="project-post">
+        <div class="project-inner">
+          <div class="title">Smart Farm Guardian</div>
+          <span class="project-year">2025</span>
+          <p class="project-desc">
+            An end-to-end farm management platform with real-time IoT sensor monitoring, ML-based crop recommendations, and automated irrigation control. Achieved up to <strong>45% reduction in water consumption</strong> via sensor-driven scheduling logic.
+          </p>
+        </div>
+        <div class="project-host">
+          <span class="tech"><em>Python &middot; React &middot; Supabase &middot; ML &middot; NodeMCU &middot; IoT</em></span>
+          <a href="https://github.com/Arohi-Shah" target="_blank">
+            <i data-feather="github"></i> view on github
+          </a>
+        </div>
+      </div>
+
+      <!-- AirScope -->
+      <div class="project-post">
+        <div class="project-inner">
+          <div class="title">AirScope &mdash; AQI Monitor &amp; Predictor</div>
+          <span class="project-year">2025</span>
+          <p class="project-desc">
+            A full-stack air quality platform providing real-time AQI data worldwide through Open-Meteo APIs with city search and automated health recommendations. Uses a <strong>Random Forest Regressor</strong> for AQI prediction and 5-day weather forecasts.
+          </p>
+        </div>
+        <div class="project-host">
+          <span class="tech"><em>React &middot; TypeScript &middot; Flask &middot; Python &middot; Scikit-Learn</em></span>
+          <a href="https://github.com/Arohi-Shah" target="_blank">
+            <i data-feather="github"></i> view on github
+          </a>
+        </div>
+      </div>
+
+      <!-- 2048 AI -->
+      <div class="project-post">
+        <div class="project-inner">
+          <div class="title">2048 AI Autoplay</div>
+          <span class="project-year">2026</span>
+          <p class="project-desc">
+            An autonomous 2048 player using <strong>Expectimax search</strong>, evaluating future game states up to three moves ahead under probabilistic tile spawns. Designed a weighted board-evaluation heuristic combining empty-cell preservation, smoothness, monotonicity, and corner positioning.
+          </p>
+        </div>
+        <div class="project-host">
+          <span class="tech"><em>Python &middot; Expectimax &middot; Heuristics &middot; Probability</em></span>
+          <a href="https://github.com/Arohi-Shah/2048-autoplay" target="_blank">
+            <i data-feather="github"></i> view on github
+          </a>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="https://github.com/Arohi-Shah" target="_blank" title="All Projects on GitHub"><i data-feather="external-link"></i></a>
+          </div>
+          <div class="permalinks">
+            <li><span class="subtitle" style="font-size:0.85em;">3 Projects</span></li>
+          </div>
+          <div class="info-icon">
+            <a href="#skills" title="skills"><i data-feather="tag"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <article id="experience">
+      <h1><a href="#experience">Experience</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="subtitle">Software Intern</span>
+            <span class="timeline-date">June 2026 &ndash; Nov 2026</span>
+          </div>
+          <div class="timeline-company">Apollo Meister K LLP &middot; Noida, UP (Hybrid)</div>
+          <ul class="timeline-body">
+            <li>Working in the Software division on AI/ML-based development, IoT controllers, and industrial automation systems including <strong>SCADA, PLCs, and Servo Controls</strong>.</li>
+            <li>Gaining hands-on experience with <strong>Raspberry Pi, ESP32, and ESP8266</strong>, along with Network WiFi Mesh and Industrial Robotics Integration.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <span class="subtitle">Content Development Team Lead</span>
+            <span class="timeline-date">Sept. 2025 &ndash; Present</span>
+          </div>
+          <div class="timeline-company">SPEAR Grant Project, VIT Bhopal &middot; Bhopal, MP</div>
+          <ul class="timeline-body">
+            <li>Led cross-functional team delivering structured educational content for a university-sponsored grant research initiative.</li>
+            <li>Coordinated planning, peer-review cycles, and delivery timelines; collaborated with faculty to align outputs with research goals.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank" title="LinkedIn"><i data-feather="linkedin"></i></a>
+          </div>
+          <div class="permalinks">
+            <li class="upper" style="color:var(--muted);">apollo meister k llp &bull; vit bhopal</li>
+          </div>
+          <div class="info-icon">
+            <a href="#education" title="education"><i data-feather="book"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <article id="education">
+      <h1><a href="#education">Education</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">&#127979;</div>
+        <div>
+          <div class="subtitle">Vellore Institute of Technology</div>
+          <p class="edu-degree">B.Tech &mdash; Computer Science &amp; Engineering (Gaming Technology)</p>
+          <p class="edu-meta">Bhopal, MP &bull; Aug. 2023 &ndash; May 2027</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">&#127891;</div>
+        <div>
+          <div class="subtitle">White Leaf Public School</div>
+          <p class="edu-degree">11th &ndash; 12th Standard Boards</p>
+          <p class="edu-meta">Delhi, New Delhi &bull; 2023</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">&#128218;</div>
+        <div>
+          <div class="subtitle">Indus Valley Public School</div>
+          <p class="edu-degree">KG &ndash; 10th Standard Boards</p>
+          <p class="edu-meta">Noida, UP &bull; 2021</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="#experience" title="experience"><i data-feather="briefcase"></i></a>
+          </div>
+          <div class="permalinks">
+            <li><span class="subtitle" style="font-size:0.85em;">VIT Bhopal &bull; 2023&ndash;2027</span></li>
+          </div>
+          <div class="info-icon">
+            <a href="#certifications" title="certifications"><i data-feather="award"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+    <article id="certifications">
+      <h1><a href="#certifications">Certifications &amp; Achievements</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-badge">G</div>
+        <div>
+          <h4>Google IT Support Professional Certificate</h4>
+          <span class="cert-issuer">Google &bull; 2026</span>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-badge">AWS</div>
+        <div>
+          <h4>AWS Certified Cloud Practitioner &mdash; Official Practice Set (CLF-C02)</h4>
+          <span class="cert-issuer">Amazon Web Services &bull; 2025</span>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-badge">AWS</div>
+        <div>
+          <h4>AWS Technical Essentials</h4>
+          <span class="cert-issuer">Amazon Web Services &bull; 2025</span>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <div class="cert-badge">IBM</div>
+        <div>
+          <h4>Cloud Fundamentals &amp; Generative AI</h4>
+          <span class="cert-issuer">IBM &bull; 2025</span>
+        </div>
+      </div>
+
+      <div class="cert-item cert-highlight">
+        <div class="cert-badge">TCS</div>
+        <div>
+          <h4>TCS CodeVita Season 13</h4>
+          <span class="cert-issuer">Global Rank <strong>9,174</strong> out of 200,000+ participants &bull; 2026</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="#education" title="education"><i data-feather="book-open"></i></a>
+          </div>
+          <div class="permalinks">
+            <li><span class="subtitle" style="font-size:0.85em;">5 Certifications</span></li>
+          </div>
+          <div class="info-icon">
+            <a href="#contact" title="contact"><i data-feather="send"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== CONTACT ==================== -->
+    <article id="contact">
+      <h1><a href="#contact">Get In Touch</a></h1>
+
+      <div class="dots" style="text-align:center; margin: 0.75em auto;">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Ask-style contact info -->
+      <div class="contact-ask">
+        <div class="contact-ask-header">
+          <i data-feather="message-circle"></i>
+          <span class="subtitle">drop a message</span>
+        </div>
+        <div class="contact-links">
+          <div class="contact-link-item">
+            <i data-feather="mail"></i>
+            <span><a href="mailto:arohi.shah654@gmail.com">arohi.shah654@gmail.com</a></span>
+          </div>
+          <div class="contact-link-item">
+            <i data-feather="linkedin"></i>
+            <span><a href="https://www.linkedin.com/in/arohi-shah-26567a293/" target="_blank">linkedin.com/in/arohi-shah-26567a293</a></span>
+          </div>
+          <div class="contact-link-item">
+            <i data-feather="github"></i>
+            <span><a href="https://github.com/Arohi-Shah" target="_blank">github.com/Arohi-Shah</a></span>
+          </div>
+          <div class="contact-link-item">
+            <i data-feather="phone"></i>
+            <span><a href="tel:+917982136045">+91-7982136045</a></span>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="say something..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="main-info">
+          <div class="info-icon">
+            <a href="mailto:arohi.shah654@gmail.com" title="Send Email"><i data-feather="mail"></i></a>
+          </div>
+          <div class="permalinks">
+            <li class="upper" style="color:var(--muted);">Noida, UP &bull; India</li>
+          </div>
+          <div class="info-icon">
+            <a href="https://github.com/Arohi-Shah" target="_blank" title="GitHub"><i data-feather="github"></i></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ==================== END OF PAGE ==================== -->
+    <article id="pg">
+      <a href="#about" title="back to top"><i data-feather="arrow-up"></i></a>
+      <div class="slash">/</div>
+      <a href="#contact" title="get in touch"><i data-feather="send"></i></a>
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="upper">you reached the end</div>
+    </article>
+
+  </div><!-- /posts-container -->
+</section><!-- /container -->
+
+<script>
+  /* Fallback: reveal the page even if jQuery or main.js fails to load */
+  window.addEventListener("load", function () { document.body.classList.remove("load-in"); });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
