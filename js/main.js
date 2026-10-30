@@ -4,7 +4,7 @@
 // ============================================================
 
 // Paste your Formspree endpoint here (see setup steps), e.g. "https://formspree.io/f/abcdwxyz"
-var FORM_ENDPOINT = "https://formspree.io/f/https://formspree.io/f/mkjjvwnw";
+var FORM_ENDPOINT = "https://formspree.io/f/mkjjvwnw";
 
 $(document).ready(function () {
 
